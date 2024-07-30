@@ -1,0 +1,66 @@
+
+    <div class="primeiro-card">
+        <div class="card-esquerda">
+
+            <div class="UserName">
+                <div class="alinhar-caixas">
+                    <span>
+                        <mat-icon>stop_circle</mat-icon>
+                    </span>
+    
+                    <div style="margin-left: 5px;">
+                        <h4>Kevin Dukkon</h4>
+                        <p>heykevdu.co</p>
+                    </div>
+    
+                    <span>
+                       <img src="assets/img/expand_all.png" style="width: 24px; margin-left: 600%;">
+                    </span>
+                </div>
+            </div>
+
+            <div class="input">
+                <mat-icon class="search">search</mat-icon>
+                <input type="text" placeholder="Search">
+                <span class="span">
+                    <mat-icon class="maximize">maximize</mat-icon>
+                </span>
+
+            </div>
+
+            <div class="buttons">
+                <button mat-fab extended><mat-icon>home</mat-icon>Dashboard</button>
+                <button mat-fab extended><mat-icon>bar_chart_4_bars</mat-icon>Accounts</button>
+                <button mat-fab extended><mat-icon>credit_card</mat-icon>Cards</button>
+                <button mat-fab extended><mat-icon>attach_money</mat-icon>Transaction</button>
+                <button mat-fab extended><mat-icon>dynamic_feed</mat-icon>Spend Groups</button>
+                <button mat-fab extended><mat-icon>trending_up</mat-icon>Integratios</button>
+                <button mat-fab extended><mat-icon>person</mat-icon>Payees</button>
+                <button mat-fab extended><mat-icon>inventory_2</mat-icon>Invoices</button>
+            </div>
+        </div>
+
+        <div class="card-direita">
+            <div class="card-direita__top">
+               <h3>Hey, Kevin</h3>
+                <p>{{data | date:'fullDate'}}</p>
+            </div>
+
+            <div class="cards">
+                <div style="display: flex; flex-direction: column;justify-content: space-around;">
+                    <h4>Availabe Balance</h4>
+                    <div>
+                        <h1>$19.0000</h1>
+                        <p style="font-size: 14px;"><mat-icon>arrow_upward</mat-icon><span>3%</span> vs last month</p>
+                    </div>
+                </div>
+                <app-line-chart></app-line-chart>
+            </div>
+            
+            <div class="cards" style="display: flex; flex-direction: column;">
+                <h4>spend activity</h4>
+                <p>1.2k</p>
+            </div>
+           
+        </div>
+    </div>
